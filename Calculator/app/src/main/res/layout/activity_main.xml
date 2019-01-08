@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorResultBackground">
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="bottom|end"
+            android:paddingRight="30dp"
+            android:text="0"
+            android:textColor="@color/colorResultText"
+            android:textSize="70sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/button_ac"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBaseButton"
+            android:gravity="center"
+            android:text="AC"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_add_sub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBaseButton"
+            android:gravity="center"
+            android:text="@string/lable_del"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_percent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBaseButton"
+            android:gravity="center"
+            android:text="\u0025"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_div"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorMainOperation"
+            android:gravity="center"
+            android:text="\u00F7"
+            android:textAlignment="center"
+            android:textColor="@color/colorResultText"
+            android:textSize="@dimen/buttonLabelTextSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorButtonLabel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorBaseButton"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/button_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="8"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="9"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_mul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorMainOperation"
+            android:gravity="center"
+            android:text="\u00D7"
+            android:textAlignment="center"
+            android:textColor="@color/colorResultText"
+            android:textSize="@dimen/buttonLabelTextSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorButtonLabel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorBaseButton"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/button_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_add_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="6"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_sub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorMainOperation"
+            android:gravity="center"
+            android:text="\uFF0D"
+            android:textAlignment="center"
+            android:textColor="@color/colorResultText"
+            android:textSize="@dimen/buttonLabelTextSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorButtonLabel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorBaseButton"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorMainOperation"
+            android:gravity="center"
+            android:text="\u002b"
+            android:textAlignment="center"
+            android:textColor="@color/colorResultText"
+            android:textSize="@dimen/buttonLabelTextSize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorButtonLabel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorBaseButton"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/button_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_dot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="."
+            android:textAlignment="center"
+            android:textColor="@color/colorButtonLabel"
+            android:textSize="@dimen/buttonLabelTextSize" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonLabel" />
+
+        <TextView
+            android:id="@+id/button_equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorMainOperation"
+            android:gravity="center"
+            android:text="\u003D"
+            android:textAlignment="center"
+            android:textColor="@color/colorResultText"
+            android:textSize="@dimen/buttonLabelTextSize" />
+    </LinearLayout>
+
+</LinearLayout>
